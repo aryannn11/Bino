@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Source Sans 3", sans-serif;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root{
+    --hover-color: #e74c3c;
+    --links-color: white;
+    --play-text: "Montserrat", sans-serif;
+    --play-text-2: "Source Sans 3", sans-serif;
+    --play-text-3: "Open Sans", sans-serif;
+}
+
+body{
+    background-color: white;
+}
+
+.main-header{
+    position: relative;
+}
+
+.header{
+    background-image:  linear-gradient(90deg, rgba(137, 50, 0, 0.297) 0%, rgba(114, 56, 1, 0.403) 35%, rgba(117, 60, 0, 0.494) 100%),url(./Images/hot\ air\ balloon.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(100% 0, 100% 84%, 61% 100%, 50% 98%, 39% 100%, 0 85%, 0 0);
+    
+}
+
+.header .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 120px;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    font-family: var(--play-text);
+    color: var(--links-color);
+}
+
+.navbar ul a:hover{
+    color: var(--hover-color);
+    font-weight: 200;
+}
+
+.main-hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px;
+    /* position: relative; */
+}
+
+.main-hero .fa-solid{
+    background: rgb(196, 185, 185);
+    padding: 20px;
+    color: var(--hover-color);
+    transition: 0.5s ease;
+}
+
+.main-header .fa-arrow-down{
+    background: rgb(196, 185, 185);
+    color: #e74c3c;
+    border-radius: 50%;
+    padding: 15px;
+
+   
+}
+
+.header .down-arrow{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-header .down-arrow{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+.main-hero .fa-solid:hover{
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: white;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+    color: white;
+    gap: 1rem;
+}
+
+.hero-section h1{
+    font-size: 4rem;
+    /* font-weight: 500; */
+    font-family: var(--play-text-2);
+}
+
+.hero-section h3{
+    font-family: var(--play-text-3);
+}
+
+.hero-section p{
+    max-width: 70%;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-grp{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.hero-section a{
+    padding: 18px 40px;
+    text-decoration: none;
+    font-family: var(--play-text);
+}
+
+.btn-1{
+    background-color: #e74c3c;
+    color: white;
+    font-family: var(--play-text-3);
+    transition: 1s ease;
+    border: 1px solid white;
+}
+
+.btn-2{
+    border: 1px solid white;
+    color: white;
+    font-family: var(--play-text-3);
+    transition: 1s ease;
+}
+
+.hero-section .btn-1:hover{
+    background-color: rgba(79, 79, 79, 0.497);
+    color: white
+}
+
+.hero-section .btn-2:hover{
+    background-color: #e74c3c;
+    color: white;
+}
+
+.boxes{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+}
+
+.boxes h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.boxes p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.boxes .box{
+    height: 25%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.box1, .box2 ,.box3, .box4{
+    display: flex;
+    color: brown;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    border: 1px solid gray;
+    transition: 0.4s ease-in;
+}
+
+.box:hover .box1,
+.box:hover .box2,
+.box:hover .box3,
+.box:hover .box4{
+    transform: rotate(45deg);
+    border: 1px solid brown;
+}
+
+.box:hover h4{
+    color: brown;
+}
+
+.boxes .i{
+    position: absolute;
+    top: 12%;
+    color: brown;
+}
